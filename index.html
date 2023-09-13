@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- header section start -->
+    <div id="header">
+    <div class="container">
+        <nav>
+            <img src="./images/Black & White Minimalist Business Logo (2).png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="home">Home</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="services">Services</a></li>
+                <li><a href="portfolio">Portfolio</a></li>
+                <li><a href="contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>    
+        </nav>
+        <div class="header-text">
+            <p>UI/UX Designer</p>
+            <h1>Hi, I'm  <span>Saif Ali</span><br> From Pakistan</h1>
+        </div>
+    </div>  
+    </div>
+    <!-- header section end -->
+
+    <!-- About section start -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum obcaecati,
+                    exercitationem voluptatibus distinctio labore repudiandae. Culpa totam,
+                    distinctio, quo, molestias officiis, in sit ullam explicabo cupiditate
+                    beatae deserunt ex reiciendis. Lorem ipsum dolor, sit amet consectetur
+                    adipisicing elit. Sint nemo sequi voluptas atque magni modi, assumenda 
+                    voluptatibus iure sapiente molestiae ex corporis. Quos ipsum aperiam 
+                    repellendus corrupti a ab amet!</p>
+
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing/Interfaces</li>
+                            <li><span>Web Development</span><br>Figma Prototype</li>
+                            <li><span>Front End Developer</span><br>Html/CSS/Json/MySQL</li>
+                            <li><span>Javascript</span><br>Seo/Bootstrap/JQuery/Git</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>2023 - current</span><br>UI/UX Designing</li>
+                            <li><span>2023 - current</span><br>Front End Developer</li>
+                            <li><span>2023 - current</span><br>Html/CSS/JSON</li>
+                            <li><span>2023 - current</span><br>Seo/Bootstrap/JQuery/Git</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2022 - Matric</span><br>Allied School </li>
+                            <li><span>2023 - current</span><br>Higher Diploma Software Engineer</li>
+                            <li><span>2023 - current</span><br>Leadership,Management</li>
+                            <li><span>2023 - current</span><br>Chic Lighting Project</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About section end -->
+
+    <!-- Services section start -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1> 
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Designing</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam obcaecati dignissimos 
+                        dolor asperiores, odit porro repellat error vitae voluptatem. Ex laboriosam quidem iste 
+                        laudantium temporibus ipsam ratione vitae placeat exercitationem.
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, distinctio 
+                        earum pariatur sed repellat perspiciatis eligendi ut officiis nobis accusantium 
+                        nesciunt ipsum. Nisi dolores sequi laboriosam molestiae, minima expedita autem.
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Front End Developer</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae dolor voluptates, 
+                        dolorum quasi laudantium, quisquam quia quod at, nam ullam numquam! Ipsam maxime
+                        vel optio dignissimos sint nihil iusto! Temporibus.
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <!-- services section end -->
+
+        <!-- Portfolio section start -->
+
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="./images/work-1.png">
+                        <div class="layer">
+                            <h3>Social Media App</h3>
+                            <p>The App You to the talented people around the world.
+                                Download it From play store, And Enjoy yourself thank you and hope your experience was good.
+                            </p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="./images/work-2.png">
+                        <div class="layer">
+                            <h3>Music App</h3>
+                            <p>The App You to the talented people around the world.
+                                Download it From play store, And Enjoy yourself thank you hope your experience was good.
+                            </p>    
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="./images/work-3.png">
+                        <div class="layer">
+                            <h3>Online Shopping  App</h3>
+                            <p>The App You to the talented people around the world.
+                                Download it From play store, And Enjoy yourself thank you hope your experience was good.
+                            </p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See More</a>
+            </div>
+        </div>
+    </div>
+    <!-- portfolio section end -->
+
+    <!-- contact form start -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> mirzasaifali777@Gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> 03251020857</p>
+                    <div class="social-icons">
+                        <a href="https//facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="./images/SaifAliResume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Mirza. Made with <i class="fa-solid fa-heart"></i> by Saif Ali</p>
+        </div>
+    </div>
+    <!-- contact section emd  -->
+    <script src="script.js"></script>
+</body>
+</html>
